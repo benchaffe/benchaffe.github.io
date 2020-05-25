@@ -35,3 +35,12 @@ body {
   position: absolute;
   right: 1.5rem;
 }
+
+.navbar-toggler-icon {
+  display: inline-block;
+}
+
+.menuicon {
+  height: 30px;
+  width: 30px;
+}
