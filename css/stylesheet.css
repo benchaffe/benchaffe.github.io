@@ -1,0 +1,37 @@
+.site-title {
+
+  color: #FFFFFF !important;
+  font-family: 'Raleway', sans-serif;
+  padding: 1.5rem;
+}
+
+body {
+  background-color: #E44946;
+}
+
+.navbartext {
+  color: #FFFFFF !important;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+
+
+.display-2 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  font-weight: 700;
+  color: #FFFFFF !important;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+
+.alignright {
+  position: absolute;
+  right: 1.5rem;
+}
