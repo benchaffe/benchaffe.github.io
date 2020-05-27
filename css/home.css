@@ -1,21 +1,6 @@
-.site-title {
-
-  color: #FFFFFF !important;
-  font-family: 'Raleway', sans-serif;
-  padding: 1.5rem;
-}
-
 body {
   background-color: #E44946;
 }
-
-.navbartext {
-  color: #FFFFFF !important;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-
 
 .display-2 {
   position: fixed;
@@ -29,16 +14,25 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+.site-title {
 
+  color: #FFFFFF !important;
+  font-family: 'Raleway', sans-serif;
+  padding: 1.5rem;
+}
+
+.navbartext {
+  color: #FFFFFF !important;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
 
 .alignright {
   position: absolute;
   right: 1.5rem;
 }
 
-.navbar-toggler-icon {
-  display: inline-block;
-}
+
 
 .menuicon {
   height: 30px;
