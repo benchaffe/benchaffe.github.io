@@ -12883,37 +12883,7 @@ Test accuracy: 0.99942064
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>It appears our model is very accurate, getting over 99% of cases correct. However, to really tell if this is the model we want, we need to look deeper. Due to the imbalanced data, if the model just guessed not fraud for each transaction it would also get over 99% accuracy.<br>
-First, lets take a look at what it predicts for the test cases.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cl0</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">cl1</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">prediction</span> <span class="ow">in</span> <span class="n">predictions</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">prediction</span> <span class="o">&gt;</span> <span class="mf">0.5</span><span class="p">:</span>
-        <span class="n">cl1</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">cl0</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Predicted &quot;</span><span class="p">,</span> <span class="n">cl1</span><span class="p">,</span> <span class="s2">&quot; of the transactions are fraud&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Predicted &quot;</span><span class="p">,</span> <span class="n">cl0</span><span class="p">,</span> <span class="s2">&quot; of the transactions are not fraud&quot;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Our model is not just guessing not fraud for each case which is a good sign. Now lets test the model on all the data and see what we get.</p>
+Lets take a look at what it predicts for the whole data set.</p>
 
 </div>
 </div>
@@ -12979,7 +12949,7 @@ First, lets take a look at what it predicts for the test cases.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can see that this model misses 89 cases of fraud, and also wrongly classifies 28 legitimate transactions as fraud. For a bank, this means too many customers will either be contacted to validate their details or have their card blocked as a result of this wrong classification.<br>
+<p>We can see that this model misses 89 cases of fraud, and also wrongly classifies 28 legitimate transactions as fraud. For a bank, this means 28 customers will either be contacted to validate their details or have their card blocked as a result of this wrong classification and 89 fraudulent transactions will go undetected<br>
 There is definitely some room to improve, scaling the data to have half fraud and half non fraud might improve our model.</p>
 
 </div>
