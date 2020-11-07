@@ -2,23 +2,35 @@
   text-align: center;
   font-size: 4rem;
   font-weight: 700;
-  color: #FFFFFF !important;
-  font-family: 'Raleway', sans-serif;
+  color: #ffffff !important;
+  font-family: "Raleway", sans-serif;
 }
 
 .header-text {
   font-weight: 700;
-  color: #FFFFFF !important;
-  font-family: 'Raleway', sans-serif;
+  color: #ffffff !important;
+  font-family: "Raleway", sans-serif;
 }
 
 .p-text {
-  color: #FFFFFF !important;
-  font-family: 'Raleway', sans-serif;
+  color: #ffffff !important;
+  font-family: "Raleway", sans-serif;
 }
 
 .skills-text {
   font-weight: 600;
-  color: #FFFFFF !important;
-  font-family: 'Raleway', sans-serif;
+  color: #ffffff !important;
+  font-family: "Raleway", sans-serif;
+}
+
+.LI-badge-container-vertical-light.large {
+  float: right;
+}
+
+a {
+  cursor: pointer;
+}
+
+.btn {
+  font-family: "Raleway", sans-serif;
 }
