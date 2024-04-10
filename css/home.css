@@ -6,6 +6,12 @@
     z-index: 1;
 }
 
+@media only screen and (max-width: 768px) {
+    .container-fluid {
+        vw: 100;
+    }
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -116,6 +122,12 @@ span.navlink:hover {
     color: lightgray;
     width: 30rem;
     padding-top: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .bio {
+        max-width: 100vw;
+    }
 }
 
 section.aboutsection {
@@ -279,7 +291,8 @@ section.appdevelopment {
 
 @media only screen and (max-width: 768px) {
     .dataimgborder {
-        margin-left: 2rem;
+        margin-left: 0rem;
+        scale: 0.8;
     }
 }
 
